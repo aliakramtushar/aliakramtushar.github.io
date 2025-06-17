@@ -1,1 +1,166 @@
-<h1>page is under construction</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Akram - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        :root {
+            --bg-light: #f8f9fa;
+            --text-light: #212529;
+            --bg-dark: #121212;
+            --text-dark: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: var(--bg-dark) !important;
+            color: var(--text-dark) !important;
+        }
+
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #0d6efd;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        .skill-badge {
+            margin: 5px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background-color: #0d6efd;
+            color: #fff;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .skill-badge:hover {
+            background-color: #0a58ca;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-outline-dark toggle-btn" onclick="toggleDarkMode()">🌓</button>
+    <section class="hero">
+        <img src="images/aliakram.jpg" alt="Ali Akram">
+        <h1 class="display-5">Ali Akram</h1>
+        <p class="lead">Senior Software Engineer | ASP.NET Core & Angular Expert</p>
+        <p>
+            <a href="mailto:aliakramtushar@gmail.com" class="text-white">aliakramtushar@gmail.com</a> |
+            <a href="https://github.com/aliakramtushar" class="text-white" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/aliakramtushar" class="text-white" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <div class="container my-5">
+        <h3 class="section-title">Career Objective</h3>
+        <p>
+            Passionate and results-driven Software Engineer with over 7 years of experience in building scalable web
+            applications and enterprise solutions using .NET and Angular ecosystems. Seeking to leverage deep knowledge
+            of full-stack development, architectural patterns, and agile methodologies to contribute to impactful
+            projects that solve real-world problems.
+        </p>
+
+        <h3 class="section-title mt-5">Skills</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h6>Backend & Architecture</h6>
+                <span class="skill-badge">ASP.NET</span><span class="skill-badge">.NET Core</span><span class="skill-badge">Web
+                    API</span><span class="skill-badge">EF Core</span><span class="skill-badge">MVC</span><span
+                    class="skill-badge">LINQ</span><span class="skill-badge">Clean
+                    Architecture</span><span class="skill-badge">DDD</span><span class="skill-badge">Repository
+                    Pattern</span><span class="skill-badge">CQRS</span>
+            </div>
+            <div class="col-md-4">
+                <h6>Frontend</h6>
+                <span class="skill-badge">HTML5</span><span class="skill-badge">CSS3</span><span
+                    class="skill-badge">Bootstrap</span><span class="skill-badge">Tailwind</span><span
+                    class="skill-badge">JavaScript</span><span class="skill-badge">TypeScript</span><span
+                    class="skill-badge">jQuery</span><span class="skill-badge">Angular (6-19)</span>
+            </div>
+            <div class="col-md-4">
+                <h6>Tools & DevOps</h6>
+                <span class="skill-badge">Docker</span><span class="skill-badge">GitHub</span><span
+                    class="skill-badge">Postman</span><span class="skill-badge">MSTest</span><span
+                    class="skill-badge">Reporting</span><span class="skill-badge">iTextSharp</span><span
+                    class="skill-badge">Jira</span><span class="skill-badge">Azure Board</span>
+            </div>
+        </div>
+
+        <h3 class="section-title mt-5">Experience</h3>
+        <ul>
+            <li><strong>TIB Fintech (2023–Present)</strong> – Led payment gateway integrations (BlueSnap, RBC), webhook
+                features, concurrency handling, and unit testing.</li>
+            <li><strong>Hoxro (UK)</strong> – Developed a legal management SaaS platform using ASP.NET Core, Angular,
+                Graph API, SignalR, and Azure deployment.</li>
+            <li><strong>Nexkraft Ltd</strong> – Delivered secure software for Army, Police, and RAB operation systems.
+            </li>
+            <li><strong>Solution World Ltd</strong> – Worked on Garments ERP, weaving, dyeing, and asset modules in HRM
+                systems.</li>
+            <li><strong>Infocrat Solutions</strong> – Handled HRM systems with ASP.NET and SQL Server.</li>
+        </ul>
+
+        <h3 class="section-title mt-5">Projects</h3>
+        <ul>
+            <li><strong>Hoxro Legal</strong> – Case & File Management with SignalR, Graph API; deployed to Azure.</li>
+            <li><strong>TIB Fintech</strong> – Secure and scalable payment gateway integrations with ASP.NET Core and
+                Angular.</li>
+            <li><strong>RAB Management System</strong> – Real-time command and operation tool for government use.</li>
+            <li><strong>Garments ERP</strong> – Modules for inventory, production, asset and weaving.</li>
+        </ul>
+
+        <h3 class="section-title mt-5">Education</h3>
+        <ul>
+            <li><strong>B.Sc. in CSE</strong> – American International University-Bangladesh (2013–2017)</li>
+            <li><strong>Science</strong> – Dhaka College (2011–2012)</li>
+        </ul>
+    </div>
+
+    <footer class="text-center py-4 border-top">
+        <p>© 2025 Ali Akram | <a href="https://github.com/aliakramtushar" target="_blank">GitHub</a> | <a
+                href="mailto:aliakramtushar@gmail.com">Email</a></p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
